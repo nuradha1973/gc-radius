@@ -1,0 +1,8 @@
+# Working tree ini = network share ke server live (Linux). Jangan pernah
+# biarkan Git mengubah line ending file, karena file langsung dipakai server.
+* text=auto eol=lf
+
+# Binary
+*.png binary
+*.jpg binary
+*.ico binary

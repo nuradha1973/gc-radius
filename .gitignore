@@ -1,23 +1,42 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# ==== Secrets (jangan pernah di-commit) ====
+# Berisi kredensial DB + hash password admin
+config/settings.json
+config/settings.local.json
+config/*.local.json
+.env
+.env.*
+
+# ==== Backup / dump (bisa besar & berisi data user) ====
+*.sql
+*.sql.gz
+*.dump
+backups/
+backup/*.sql
+
+# Schema FreeRADIUS tetap ikut di-commit
+!setup.sql
+
+# ==== Logs & temp ====
+*.log
+logs/*.log
+error_log
+php_errors.log
+*.tmp
+*.bak
+*.old
+
+# ==== Editor / OS ====
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ==== Dependency ====
+node_modules/
+vendor/
+
+# ==== Runtime cache ====
+sessions/
+cache/

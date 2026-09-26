@@ -1,0 +1,23 @@
+{
+    "name": "GC Radius - Mikrotik Hotspot Manager",
+    "short_name": "GC Radius",
+    "description": "GC Radius Mikrotik Hotspot Manager",
+    "start_url": "/gc-radius/index.php",
+    "scope": "/gc-radius/",
+    "display": "standalone",
+    "background_color": "#f0f2f5",
+    "theme_color": "#4F46E5",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "assets/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
