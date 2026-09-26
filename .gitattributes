@@ -2,6 +2,11 @@
 # biarkan Git mengubah line ending file, karena file langsung dipakai server.
 * text=auto eol=lf
 
+# File batch Windows: simpan apa adanya (CRLF). cmd.exe bisa salah baca
+# label/goto kalau file .bat dinormalisasi jadi LF.
+*.bat -text
+*.cmd -text
+
 # Binary
 *.png binary
 *.jpg binary
